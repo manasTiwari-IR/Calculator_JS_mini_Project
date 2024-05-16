@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="back">
+    <h1 class="title">CALCULATOR</h1>
+  <div class="container flex flex-co item-center">
+    <div class="row">
+      <input class="input" type="text" autofocus onclick="display('')">
+    </div>
+    <hr>
+    <div class="row">
+      <button class="button btnAC">AC</button>
+      <button class="button btnpow">^</button>
+      <button class="button btnmod" onclick="display('%')">%</button>
+      <button class="button btndiv" onclick="display('/')">/</button>
+    </div>
+    <div class="row">
+      <button class="button btnlog">log</button>
+      <button class="num button btn7" onclick="display('7')">7</button>
+      <button class="num button btn8 " onclick="display('8')">8</button>
+      <button class="num button btn9" onclick="display('9')">9</button>
+      <button class="button btncross" onclick="display('*')">&#10006</button>     <!-- UTF-8 code for Cross -->
+    </div>
+    <div class="row">
+      <button class="button btnln">ln</button>
+      <button class="num button btn4" onclick="display('4')">4</button>
+      <button class="num button btn5" onclick="display('5')">5</button>
+      <button class="num button btn6" onclick="display('6')">6</button>
+      <button class="button btnminus" onclick="display('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="button btnfact">!</button>
+      <button class="num button btn1" onclick="display('1')">1</button>
+      <button class="num button btn2" onclick="display('2')">2</button>
+      <button class="num button btn3" onclick="display('3')">3</button>
+      <button class="button btnplus" onclick="display('+')">+</button>
+    </div>
+    <div class="row">
+      <button class="button btnpie" >π</button>
+      <!-- <button class="button btne" onclick="display('e')">e</button> -->
+      <button class="button btndot" onclick="display('.')">.</button>
+      <button class="num button btn0" onclick="display('0')">0</button>
+      <button class="button btnequal">=</button>
+    </div>   
+    
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

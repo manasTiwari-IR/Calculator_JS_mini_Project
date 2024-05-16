@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    user-select: none;
+}
+body.back {
+  background-image: url(back.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.flex {
+  display: flex;
+    /* background-color: cadetblue; */
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+      }
+  
+  .flex-col {
+    flex-direction: column;
+  } 
+  .item-center {
+    align-content: center;
+  }
+.title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 55px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f9f9f9;
+  text-shadow: 3px 3px 30px #0d0d0d;
+}
+
+.container {
+  margin: auto;
+  width: 20rem;
+  height: auto;
+  padding: 15px 10px;
+  /* margin: 10px 10px 0px 0px; */
+  /* From https://css.glass */
+  background: rgb(0 0 0 / 40%);
+  border-radius: 13px;
+  box-shadow: 0px 0px 30px 0px rgb(255 255 255 / 37%);
+  backdrop-filter: blur(2.5px);
+  /* -webkit-backdrop-filter: blur(4.3px); */
+  /* border: 1px solid rgba(172, 138, 247, 0.46); */
+  /* border-radius: 35px; */
+  /* background-color: rgba(255, 255, 255, 0.225); */
+  /* background-image: radial-gradient(circle, #347a83 , powderblue); */
+}
+
+.row {
+  margin: auto;
+}
+hr{
+  width: 100%;
+}
+.button {
+  padding: 15px;
+   margin: 1px;
+  /* margin-top: .5px; */
+  /* margin-bottom: .5px;  */
+  appearance: auto;
+  font-size: 25px;
+  border-color: #0d0d0d;
+  border-radius: 5px;
+  color: purple;
+  background-color: solid #4b4ba0;
+  cursor: pointer;
+  width: 60px;
+  user-select: none;
+  transition: all 0.1s;
+}
+button:hover {
+  box-shadow: 0px 0px 3px #ffffff;
+}
+button:active {
+  box-shadow: 0px 0px 5px #ffffff;
+}
+
+.row input {
+  appearance: none;
+  outline : none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  width: 18rem;
+  height: 3.5rem;
+  padding: 12px 10px;
+  text-align:right;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+
+/* .btnclear {
+  padding: 10px 2px 5px 0;
+  position: relative;
+  top: 8px;
+} */
+/* .btnAC{
+  padding-left: 12px;
+} */
+.btnlog{
+  padding-left: 10px;
+}
+
+.btnAC , .btnequal{
+  width: 127px;
+  background-color: rgb(241, 157, 0);
+  color: white;
+  font-weight: bolder;
+} 
+
+.num {
+  background-color: #d7fcf6;
+  /* color: purple; */
+}
