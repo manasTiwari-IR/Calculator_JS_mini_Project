@@ -1,3 +1,4 @@
+
 let val = "";
 let Eval = "";
 let dis = document.querySelector(".input");
@@ -6,28 +7,27 @@ val = dis.value;
 val = val.trim();
 Eval = val;
 dis.value = val;
-
-let keyallowed1 = [
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "0",
-  "+",
-  "-",
-  "*",
-  "/",
-  ".",
-  "Enter",
-  "Backspace",
-  "%",
-  "^",
-];
+// let keyallowed1 = [
+//   "1",
+//   "2",
+//   "3",
+//   "4",
+//   "5",
+//   "6",
+//   "7",
+//   "8",
+//   "9",
+//   "0",
+//   "+",
+//   "-",
+//   "*",
+//   "/",
+//   ".",
+//   "Enter",
+//   "Backspace",
+//   "%",
+//   "^",
+// ];
 
 function display(v) {
   //  val.trim();
@@ -161,63 +161,63 @@ function solve() {
   }
 }
 
-dis.addEventListener("keydown", (e) => {
-  if (
-    val == "Overload Error" ||
-    val == "Syntax Error" ||
-    val == "undefined" ||
-    val == "NaN"
-  ) {
-    val = "";
-    Eval = "";
-    dis.value = val;
-  }
-  if (!keyallowed1.includes(e.key)) {
-    e.preventDefault();
-  } else {
-    if (e.key == "Enter") {
-      e.preventDefault();
-      if (
-        val == "Overload Error" ||
-        val == "Syntax Error" ||
-        val == "undefined" ||
-        val == "NaN"
-      ) {
-        val = "";
-        Eval = "";
-        dis.value = val;
-      } else if (!overload()) solve();
-      else {
-        val = "Overload Error";
-        Eval = "";
-        dis.value = "Overload Error";
-        dis.focus();
-      }
-      dis.focus();
-    }
-    if (e.key == "Backspace") {
-      e.preventDefault();
-      val = "";
-      Eval = "";
-      dis.value = val;
-      dis.focus();
-    }
-    if (e.key == "^") {
-      e.preventDefault();
-      val += "^";
-      Eval += "**";
-      dis.value = val;
-      dis.focus();
-    } else if (e.key != "Enter" && e.key != "Backspace") {
-        val += e.key;
-        Eval += e.key;
-        dis.val = val;
-        //
-        // console.log(Eval);
-      dis.focus();
-    }
-  }
-});
+// dis.addEventListener("keydown", (e) => {
+//   if (
+//     val == "Overload Error" ||
+//     val == "Syntax Error" ||
+//     val == "undefined" ||
+//     val == "NaN"
+//   ) {
+//     val = "";
+//     Eval = "";
+//     dis.value = val;
+//   }
+//   if (!keyallowed1.includes(e.key)) {
+//     e.preventDefault();
+//   } else {
+//     if (e.key == "Enter") {
+//       e.preventDefault();
+//       if (
+//         val == "Overload Error" ||
+//         val == "Syntax Error" ||
+//         val == "undefined" ||
+//         val == "NaN"
+//       ) {
+//         val = "";
+//         Eval = "";
+//         dis.value = val;
+//       } else if (!overload()) solve();
+//       else {
+//         val = "Overload Error";
+//         Eval = "";
+//         dis.value = "Overload Error";
+//         dis.focus();
+//       }
+//       dis.focus();
+//     }
+//     if (e.key == "Backspace") {
+//       e.preventDefault();
+//       val = "";
+//       Eval = "";
+//       dis.value = val;
+//       dis.focus();
+//     }
+//     if (e.key == "^") {
+//       e.preventDefault();
+//       val += "^";
+//       Eval += "**";
+//       dis.value = val;
+//       dis.focus();
+//     } else if (e.key != "Enter" && e.key != "Backspace") {
+//         val += e.key;
+//         Eval += e.key;
+//         dis.val = val;
+//         //
+//         // console.log(Eval);
+//       dis.focus();
+//     }
+//   }
+// });
 
 // document.querySelector(".btnclear").addEventListener("click", () => {
 //   console.log("clear");
